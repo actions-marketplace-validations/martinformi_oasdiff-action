@@ -24,5 +24,5 @@ else
 fi
 
 echo -e "$output"
-echo "oasdiff_output=$output" >> $GITHUB_ENV
+echo "oasdiff_output=$output" >> $GITHUB_OUTPUT
 exit $?
