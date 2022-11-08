@@ -23,7 +23,9 @@ else
   output=$( oasdiff -format "$format" -base "$base" -revision "$revision" 2>&1 )
 fi
 
+retVal=$?
 echo -e "$output"
 echo "text<<EOF" >> $GITHUB_OUTPUT
 echo "$output" >> $GITHUB_OUTPUT
 echo "EOF" >> $GITHUB_OUTPUT
+exit $retVal
