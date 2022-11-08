@@ -1,5 +1,4 @@
 #!/bin/sh
-set -e
 
 readonly base="$1"
 readonly revision="$2"
@@ -26,3 +25,4 @@ fi
 
 echo -e "$output"
 echo "oasdiff_output=$output" >> $GITHUB_ENV
+exit $?
