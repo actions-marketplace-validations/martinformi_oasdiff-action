@@ -24,5 +24,6 @@ else
 fi
 
 echo -e "$output"
-echo "oasdiff_output=$output" >> $GITHUB_OUTPUT
-exit $?
+echo "text<<EOF" >> $GITHUB_OUTPUT
+echo "$output" >> $GITHUB_OUTPUT
+echo "EOF" >> $GITHUB_OUTPUT
