@@ -24,5 +24,5 @@ else
   output=$(oasdiff -format "$format" -base "$base" -revision "$revision")
 fi
 
-echo $oasdiff_output
+echo $output
 echo "oasdiff_output=$output" >> $GITHUB_ENV
