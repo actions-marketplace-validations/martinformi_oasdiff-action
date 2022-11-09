@@ -25,7 +25,7 @@ fi
 
 retVal=$?
 echo -e "$output"
-output="${output//$'\n'/'%0A'}"
+output="${output//$'\n'/''}"
 echo "text<<EOF" >> $GITHUB_OUTPUT
 echo "$output" >> $GITHUB_OUTPUT
 echo "EOF" >> $GITHUB_OUTPUT
