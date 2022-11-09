@@ -26,6 +26,7 @@ fi
 retVal=$?
 echo -e "$output"
 output="${output//$'\n'/''}"
+output="${output//$'"'/'\''}"
 echo "text<<EOF" >> $GITHUB_OUTPUT
 echo "$output" >> $GITHUB_OUTPUT
 echo "EOF" >> $GITHUB_OUTPUT
